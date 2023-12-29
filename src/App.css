@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+body{
+  font-size: 20px;
+  line-height: 28px;
+  background-color: #000;
+  color: #ccc;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row ul,
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.bg-1{
+  background-color: #000;
+  color: #ccc;
+  box-shadow: -11px -1px 20px 4px #0e0e0e;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bg-2 {
+  background-color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.bg-1 a{
+  color: #ccc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1,
+.f-color{
+  color: #51e2f5;
+}
+
+.f-color-1{
+  color: #fff;
+}
+
+.f-size-1{
+  font-size: 40px;
+  line-height: normal;
+  font-weight: 800;
+}
+
+h1{
+  font-weight: 800;
+}
+.f-color-2{
+  color: #0090a1;
+}
+
+h3{
+  font-size: 28px;
+  color: #0090a1;
+  font-weight: 800;
+}
+
+a{
+  text-decoration: none;
+}
+
+.bg-1 .bg-light {
+  background: #212121 !important;
+}
+
+.btn{
+  border-radius: 4px;
+}
+
+nav li{
+  padding: 5px;
+}
+
+nav li a{
+  color: #fff;
+  display: block;
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+
+nav li a{
+  color: #fff;
+  background-color: hsl(0, 0%, 100%, 0);
+  transition: all 0.5s ease;
+}
+
+nav li a.active,
+nav li a:hover{
+  background-color: hsl(0, 0%, 100%, 100);
+  color: #333;
+}
+
+.img-box{
+  position: relative;
+  z-index: 0;
+}
+
+.img-box img{
+  border: 1px solid #ccc;
+  padding: 5px;
+  background: #8ac8cf;
+}
+
+.img-box:after {
+  display: block;
+  content: "";
+  border: 5px solid #0d91a0;
+  position: absolute;
+  left: -22px;
+  top: 25px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #16919f1a;
+  opacity: 0.5;
+}
+
+.company-list{
+  color: #fff;
+}
+
+.company-list span{
+  display: block;
+  font-size: 88%;
+  color: #0d91a0;  
+  font-weight: 400;
 }

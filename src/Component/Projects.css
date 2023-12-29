@@ -1,0 +1,70 @@
+.portfolio-gallery .card{
+  position: relative;
+  background-color: #f3f4f5;
+  height: 100%;
+  border-radius: 14px;
+}
+
+.portfolio-gallery .card a{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.portfolio-gallery .card.metown-app-link a{
+  height: 40%;
+  top: auto;
+  bottom: 0;
+}
+
+.portfolio-gallery .card.metown-app-link .metown-app-btn a{
+  height: auto;
+  position: static;
+}
+
+.metown-app-btn {
+  position: absolute;
+  bottom: 55px;
+  right: 9px;
+  width: 223px;
+  height: 43px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  display: -webkit-flex;
+  display: flex;
+  text-indent: -99999px;   
+}
+
+.metown-app-btn a {
+  width: 100%;
+}
+
+.portfolio-gallery .card-img-box{
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  border-top: 3px solid #e4e8eb;
+  border-bottom: 2px solid #e2e2e2;
+}
+
+.portfolio-gallery .card-img-box img{
+  max-width:100%;
+} 
+
+.portfolio-gallery > div[class^="col-"]{
+  padding-bottom:30px;
+}
+
+.portfolio-gallery .card > *{
+  text-align: center;
+}
+
+.portfolio-gallery .card-title{
+  font-size: 20px;
+  color: #071738;
+  font-weight: 600;
+}
+
